@@ -1,0 +1,2140 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<!-- Mirrored from www.maratonaplus.com.br/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Apr 2026 23:32:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>MARATONA+ | O Peso da Herança</title>
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  '../connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1924684854889874');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1924684854889874&amp;ev=PageView&amp;noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+  <style>
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: #0e0e0e;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* ═══════════════════ HEADER ═══════════════════ */
+    .header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 300;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      padding: 18px 52px;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, transparent 100%);
+    }
+    .logo {
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      text-transform: uppercase;
+      user-select: none;
+      color: #E50914;
+    }
+    .logo b { color: #fff; font-weight: 300; }
+    .nav { display:flex; gap:22px; list-style:none; }
+    .nav a { color:#aaa; text-decoration:none; font-size:14px; }
+    .nav a:hover { color:#fff; }
+
+    /* ═══════════════════ HERO ═══════════════════ */
+    #home-page { min-height:100vh; }
+
+    .hero {
+      position: relative;
+      height: 92vh;
+      min-height: 560px;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('hero-familia.jpg.png');
+      background-size: 155%;
+      background-position: center 56%;
+      background-color: #000;
+    }
+
+    .hero-bg::before {
+      content:'';
+      position:absolute; inset:0;
+      background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.45) 0%,
+        rgba(0,0,0,0.02) 18%,
+        rgba(0,0,0,0.0)  36%,
+        rgba(0,0,0,0.45) 56%,
+        rgba(0,0,0,0.82) 70%,
+        rgba(0,0,0,0.96) 82%,
+        rgba(0,0,0,1.00) 100%
+      );
+    }
+    .hero-bg::after { display:none; }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding: 0 60px 28px;
+      max-width: 620px;
+    }
+
+    .series-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 6px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #E50914;
+    }
+    .series-badge::before {
+      content:'';
+      display:inline-block;
+      width:3px; height:14px;
+      background:#E50914;
+      border-radius:2px;
+    }
+
+    .hero-hook {
+      font-size: 15px;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 8px;
+      font-style: italic;
+    }
+
+    .hero-title {
+      font-size: clamp(52px, 7.5vw, 90px);
+      font-weight: 900;
+      line-height: 1.0;
+      letter-spacing: -2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      background: linear-gradient(150deg, #fff 0%, #e0e0e0 40%, #b0b0b0 75%, #888 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0 3px 20px rgba(0,0,0,0.95));
+    }
+
+    .hero-meta {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #aaa;
+    }
+    .mdot { width:4px;height:4px;border-radius:50%;background:#555;flex-shrink:0; }
+    .tag  { padding:3px 10px;border:1px solid rgba(255,255,255,0.22);border-radius:3px;font-size:12px;color:#aaa; }
+
+    .hero-desc {
+      font-size: 15px;
+      line-height: 1.65;
+      color: #ccc;
+      margin-bottom: 18px;
+      max-width: 500px;
+    }
+
+    /* ─── BOTÃO CTA PULSANTE ─── */
+    .cta-wrap { margin-bottom: 0; }
+
+    .btn-assistir {
+      display: inline-flex;
+      align-items: center;
+      gap: 13px;
+      padding: 22px 54px;
+      background: #16a34a;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 24px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      white-space: nowrap;
+      animation: pulso 2s ease-in-out infinite;
+      transition: filter .2s, transform .15s;
+    }
+    .btn-assistir:hover {
+      filter: brightness(1.15);
+      transform: scale(1.04);
+      animation-play-state: paused;
+    }
+    .btn-assistir svg { width:28px; height:28px; fill:#fff; flex-shrink:0; }
+
+    @keyframes pulso {
+      0%   { box-shadow: 0 0 0 0px rgba(22,163,74,.8);  transform: scale(1);     }
+      45%  { box-shadow: 0 0 0 18px rgba(22,163,74,0);  transform: scale(1.032); }
+      100% { box-shadow: 0 0 0 0px rgba(22,163,74,0);   transform: scale(1);     }
+    }
+
+    .cta-sub {
+      margin-top: 10px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 0.3px;
+    }
+    .cta-sub strong { color: rgba(255,255,255,0.8); }
+
+    /* ─── Ícones secundários ─── */
+    .icon-row { display:flex; gap:18px; }
+    .ibtn {
+      display:flex; flex-direction:column; align-items:center; gap:7px;
+      background:none; border:none; color:#aaa; cursor:pointer; font-size:11px;
+      transition: color .2s;
+    }
+    .ibtn:hover { color:#fff; }
+    .ibtn .ic {
+      width:46px; height:46px; border-radius:50%;
+      border:2px solid rgba(255,255,255,.4);
+      display:flex; align-items:center; justify-content:center;
+      font-size:18px;
+      transition: border-color .2s;
+    }
+    .ibtn:hover .ic { border-color:#fff; }
+
+    /* ═══════════════════ EPISÓDIOS ═══════════════════ */
+    .eps-section {
+      padding: 0 60px 80px;
+      background: #0e0e0e;
+    }
+
+    .tabs {
+      display:flex;
+      border-bottom: 2px solid #222;
+      margin-bottom: 26px;
+    }
+    .tab {
+      padding:15px 0;
+      margin-right:30px;
+      font-size:16px;
+      color:#666;
+      cursor:pointer;
+      border-bottom:2px solid transparent;
+      margin-bottom:-2px;
+      transition: all .2s;
+    }
+    .tab.active { color:#fff; border-bottom-color:#fff; font-weight:700; }
+    .tab:hover:not(.active) { color:#aaa; }
+
+    .season-label { font-size:22px; font-weight:700; margin-bottom:20px; }
+
+    /* ── Relacionados ── */
+    .rel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      padding-top: 8px;
+    }
+    .rel-card {
+      background: #1a1a1a;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .rel-card:hover { transform: scale(1.02); box-shadow: 0 8px 28px rgba(0,0,0,.6); }
+    .rel-thumb {
+      position: relative;
+      height: 158px;
+      overflow: hidden;
+    }
+    .rel-overlay {
+      position: absolute; inset: 0;
+      background: rgba(0,0,0,0);
+      display: flex; align-items: center; justify-content: center;
+      transition: background .2s;
+    }
+    .rel-card:hover .rel-overlay { background: rgba(0,0,0,.45); }
+    .rel-play {
+      font-size: 40px;
+      color: #fff;
+      opacity: 0;
+      transition: opacity .2s;
+    }
+    .rel-card:hover .rel-play { opacity: 1; }
+    .rel-match {
+      position: absolute; top: 10px; left: 10px;
+      background: rgba(34,197,94,.9);
+      color: #fff;
+      font-size: 11px; font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 4px;
+    }
+    .rel-info { padding: 14px 16px 18px; }
+    .rel-title { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+    .rel-meta {
+      font-size: 12px; color: #888;
+      display: flex; align-items: center; gap: 6px;
+      margin-bottom: 8px;
+    }
+    .rel-badge {
+      border: 1px solid #555;
+      color: #aaa;
+      font-size: 10px;
+      padding: 1px 5px;
+      border-radius: 2px;
+    }
+    .rel-desc { font-size: 13px; color: #aaa; line-height: 1.55; }
+
+    /* ── Detalhes ── */
+    .det-wrap { padding: 8px 0 40px; max-width: 720px; }
+    .det-h3 { font-size: 18px; font-weight: 700; margin-bottom: 14px; }
+    .det-p {
+      font-size: 15px; color: #ccc; line-height: 1.75;
+      margin-bottom: 14px;
+    }
+    .det-sobre { margin-bottom: 32px; }
+    .det-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border-top: 1px solid #2a2a2a;
+      margin-bottom: 28px;
+    }
+    @media(max-width:600px){ .det-grid { grid-template-columns: 1fr; } }
+    .det-item {
+      display: flex; flex-direction: column; gap: 4px;
+      padding: 16px 0;
+      border-bottom: 1px solid #1e1e1e;
+    }
+    .det-item:nth-child(odd)  { padding-right: 24px; }
+    .det-item:nth-child(even) { padding-left: 24px; border-left: 1px solid #1e1e1e; }
+    @media(max-width:600px){ .det-item:nth-child(even) { padding-left:0; border-left:none; } }
+    .det-label { font-size: 11px; color: #666; text-transform: uppercase; letter-spacing: 1px; }
+    .det-val   { font-size: 14px; color: #ddd; }
+    .det-badge {
+      display: inline-block;
+      border: 1px solid #555; color: #aaa;
+      font-size: 11px; padding: 1px 6px; border-radius: 3px;
+      margin-right: 6px;
+    }
+    .det-tags {
+      display: flex; flex-wrap: wrap; gap: 8px;
+      margin-bottom: 28px;
+    }
+    .det-tag {
+      background: #222; color: #aaa;
+      font-size: 12px;
+      padding: 5px 12px;
+      border-radius: 20px;
+      border: 1px solid #333;
+    }
+    .det-aviso {
+      display: flex; gap: 14px; align-items: flex-start;
+      background: #1a1a1a; border: 1px solid #2a2a2a;
+      border-radius: 8px; padding: 18px 20px;
+      font-size: 13px; color: #aaa; line-height: 1.6;
+    }
+    .det-aviso-icon { font-size: 28px; flex-shrink: 0; }
+
+    .ep-list { display:flex; flex-direction:column; }
+
+    .ep-row {
+      display:flex; align-items:flex-start; gap:18px;
+      padding:16px 12px; margin:0 -12px;
+      border-bottom:1px solid #222;
+      border-radius:5px;
+    }
+
+    .ep-n {
+      font-size:28px; font-weight:300; color:#555;
+      min-width:36px; text-align:center; margin-top:20px;
+    }
+
+    .ep-thumb {
+      position:relative;
+      width:200px; min-width:200px; height:113px;
+      border-radius:5px; overflow:hidden;
+      background:#1a1a1a; flex-shrink:0;
+    }
+    .ep-thumb img { width:100%; height:100%; object-fit:cover; }
+
+    .ep-info { flex:1; min-width:0; }
+    .ep-header { display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:7px; }
+    .ep-title { font-size:15px; font-weight:600; }
+    .ep-desc  { font-size:13px; color:#888; line-height:1.55; }
+
+    /* ═══════════════════ PLAYER ═══════════════════ */
+    #player-page {
+      display:none;
+      position:fixed; inset:0;
+      background:#000;
+      z-index:1000;
+    }
+
+    /* ── Mini player flutuante (YouTube Premium style) ── */
+    #_mini-player {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 280px;
+      height: 158px;
+      z-index: 1002;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #000;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.85);
+    }
+    #_mini-player.show {
+      display: block;
+      animation: slideUpMini 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    @keyframes slideUpMini {
+      from { transform: translateY(130%); opacity: 0.6; }
+      to   { transform: translateY(0);    opacity: 1; }
+    }
+    #_mini-player video {
+      position: absolute !important;
+      inset: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover;
+    }
+    /* Botão fechar mini player */
+    #_mini-pip-close {
+      display: none;
+      position: fixed;
+      bottom: 188px;
+      right: 4px;
+      z-index: 1003;
+      background: rgba(0,0,0,0.75);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      font-size: 13px;
+      cursor: pointer;
+      line-height: 28px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+    #_mini-pip-close:hover { background: #E50914; }
+
+    /* VTurb container */
+    #vturb-container {
+      position: absolute;
+      inset: 0;
+      background: #000;
+    }
+
+    /* ── Fade preto entre eps ── */
+    #fade-black {
+      position:absolute; inset:0;
+      background:#000;
+      opacity:0;
+      pointer-events:none;
+      transition:opacity 1.8s ease;
+      z-index:30;
+    }
+    #fade-black.on { opacity:1; pointer-events:all; }
+
+    /* ── Card "Próximo Episódio" ── */
+    #next-card {
+      position: fixed;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%) scale(0.88);
+      width: min(380px, 90vw);
+      background: #111;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 16px;
+      padding: 28px 24px 22px;
+      z-index: 50;
+      display: none;
+      text-align: center;
+      box-shadow: 0 24px 80px rgba(0,0,0,.9);
+    }
+    #next-card.on {
+      display: block;
+      animation: ncPop .4s cubic-bezier(.34,1.56,.64,1) forwards;
+    }
+
+    @keyframes ncPop {
+      from { opacity:0; transform:translate(-50%,-50%) scale(0.82); }
+      to   { opacity:1; transform:translate(-50%,-50%) scale(1); }
+    }
+
+    .nc-label {
+      font-size:11px; text-transform:uppercase;
+      letter-spacing:2px; color:#E50914;
+      font-weight:800; margin-bottom:6px;
+    }
+    .nc-title {
+      font-size:18px; font-weight:900;
+      margin-bottom:14px; line-height:1.3;
+    }
+    .nc-thumb {
+      width:100%; height:130px;
+      border-radius:8px; overflow:hidden;
+      margin-bottom:14px;
+    }
+    .nc-thumb img { width:100%; height:100%; object-fit:cover; }
+
+    .nc-countdown-txt {
+      font-size:13px; color:#aaa;
+      margin-bottom:10px;
+    }
+    .nc-countdown-txt span { color:#fff; font-weight:800; font-size:15px; }
+
+    .nc-bar { height:3px; background:#222; border-radius:2px; margin-bottom:18px; overflow:hidden; }
+    .nc-fill { height:100%; background:#16a34a; width:0%; transition:width .5s linear; }
+
+    .nc-btns { display:flex; flex-direction:column; gap:10px; }
+    .nc-btn-ok {
+      width:100%; padding:16px;
+      background:#16a34a; color:#fff;
+      border:none; border-radius:8px;
+      font-size:17px; font-weight:900;
+      cursor:pointer; letter-spacing:0.3px;
+      animation: pulsoVerde 2s ease-in-out infinite;
+    }
+    @keyframes pulsoVerde {
+      0%   { box-shadow: 0 0 0 0px rgba(22,163,74,.7); }
+      45%  { box-shadow: 0 0 0 10px rgba(22,163,74,0); }
+      100% { box-shadow: 0 0 0 0px rgba(22,163,74,0); }
+    }
+    .nc-btn-ok:hover { filter:brightness(1.12); animation-play-state:paused; }
+    .nc-btn-cancel {
+      background:none; border:none;
+      color:#555; font-size:12px;
+      cursor:pointer; text-decoration:underline;
+    }
+    .nc-btn-cancel:hover { color:#aaa; }
+
+    /* ── Controles do player (apenas p-top: back + label) ── */
+    .p-shell {
+      position:absolute; inset:0;
+      display:flex; flex-direction:column;
+      justify-content:space-between;
+      opacity:0; transition:opacity .35s;
+      background:linear-gradient(
+        to bottom,
+        rgba(0,0,0,.75) 0%, transparent 18%,
+        transparent 68%, rgba(0,0,0,.85) 100%
+      );
+      z-index:10;
+      pointer-events: none;
+    }
+    #player-page.show-ui .p-shell { opacity:1; }
+
+    .p-top {
+      display:flex; align-items:center; gap:14px;
+      padding:22px 36px;
+      pointer-events: all;
+    }
+    .btn-voltar {
+      display:flex; align-items:center; gap:8px;
+      background:none; border:none; color:#fff;
+      font-size:15px; cursor:pointer; opacity:.9;
+      transition:opacity .2s;
+    }
+    .btn-voltar:hover { opacity:.55; }
+    .btn-voltar svg { width:26px; height:26px; fill:#fff; }
+
+    .p-ep-label { font-size:14px; color:rgba(255,255,255,.65); }
+
+    /* ── Modal "Assistir Depois" ── */
+    #modal-depois {
+      display:none; position:fixed; inset:0; z-index:2000;
+      background:rgba(0,0,0,.75); backdrop-filter:blur(4px);
+      align-items:center; justify-content:center;
+    }
+    #modal-depois.on { display:flex; }
+    .modal-box {
+      background:#1a1a1a; border:1px solid rgba(255,255,255,.12);
+      border-radius:14px; padding:32px 28px; width:90%; max-width:380px;
+      animation:slideUp .3s cubic-bezier(.22,.61,.36,1);
+    }
+    .modal-box h3 { font-size:20px; font-weight:800; margin-bottom:8px; }
+    .modal-box p  { font-size:13px; color:#aaa; margin-bottom:22px; line-height:1.6; }
+    .modal-input {
+      width:100%; padding:13px 16px; margin-bottom:12px;
+      background:#0e0e0e; border:1px solid rgba(255,255,255,.2);
+      border-radius:8px; color:#fff; font-size:15px; outline:none;
+    }
+    .modal-input:focus { border-color:rgba(255,255,255,.5); }
+    .modal-submit {
+      width:100%; padding:14px; background:#25D366;
+      color:#fff; border:none; border-radius:8px;
+      font-size:16px; font-weight:800; cursor:pointer;
+      display:flex; align-items:center; justify-content:center; gap:10px;
+      margin-bottom:10px; transition:filter .2s;
+    }
+    .modal-submit:hover { filter:brightness(1.1); }
+    .modal-cancel {
+      width:100%; padding:11px; background:none;
+      color:#666; border:none; font-size:13px; cursor:pointer;
+    }
+
+    /* Modal "Continuar de onde parou?" */
+    #modal-continuar {
+      display:none; position:fixed; inset:0; z-index:2100;
+      background:rgba(0,0,0,.8); backdrop-filter:blur(5px);
+      align-items:center; justify-content:center;
+    }
+    #modal-continuar.on { display:flex; }
+    .modal-continuar-box {
+      background:#1a1a1a; border:1px solid rgba(255,255,255,.15);
+      border-radius:14px; padding:32px 28px; width:90%; max-width:400px;
+      animation:slideUp .3s cubic-bezier(.22,.61,.36,1);
+      text-align:center;
+    }
+    .modal-continuar-box h3 { font-size:20px; font-weight:800; margin-bottom:10px; }
+    .modal-continuar-box p  { font-size:13px; color:#aaa; margin-bottom:24px; line-height:1.6; }
+    .mc-btn-continuar {
+      width:100%; padding:15px; background:#E50914;
+      color:#fff; border:none; border-radius:8px;
+      font-size:16px; font-weight:800; cursor:pointer;
+      margin-bottom:10px; transition:filter .2s;
+    }
+    .mc-btn-continuar:hover { filter:brightness(1.1); }
+    .mc-btn-inicio {
+      width:100%; padding:13px; background:rgba(255,255,255,.08);
+      color:#ccc; border:1px solid rgba(255,255,255,.2);
+      border-radius:8px; font-size:14px; cursor:pointer; transition:background .2s;
+    }
+    .mc-btn-inicio:hover { background:rgba(255,255,255,.14); }
+
+    /* ── Overlay de pausa ── */
+    #pause-overlay {
+      position:absolute; inset:0; z-index:20;
+      display:flex; align-items:center; justify-content:center;
+      pointer-events:none; opacity:0;
+      transition:opacity .4s;
+    }
+    #pause-overlay.on { opacity:1; pointer-events:all; }
+    .pause-msg {
+      background:rgba(0,0,0,.82);
+      border:1px solid rgba(255,255,255,.1);
+      border-radius:14px; padding:22px 28px;
+      text-align:center; max-width:280px;
+    }
+    .pause-msg .pm-emoji { font-size:32px; margin-bottom:8px; }
+    .pause-msg .pm-txt   { font-size:16px; font-weight:700; line-height:1.45; margin-bottom:6px; }
+    .pause-msg .pm-sub   { font-size:12px; color:#aaa; }
+
+    /* ── PiP mode ── */
+    #player-page.pip-mode {
+      position: fixed;
+      bottom: 20px; right: 20px;
+      width: 280px; height: 158px;
+      z-index: 601;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.8);
+    }
+    #player-page.pip-mode .p-shell { display: none; }
+    #player-page.pip-mode #next-card { display: none; }
+    #player-page.pip-mode #fade-black { display: none; }
+
+    /* ── Página de vendas inline ── */
+    #venda-page {
+      display: none;
+      position: fixed; inset: 0;
+      z-index: 600;
+      background: #0a0a0a;
+      overflow-y: auto;
+      padding-bottom: 120px;
+    }
+    #venda-page.on { display: block; }
+
+    /* ── Bloqueador dos controles nativos do Bunny ── */
+    #player-blocker {
+      position: absolute;
+      inset: 0;
+      z-index: 6;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    /* ── Controles inferiores do player ── */
+    .p-bottom {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 0 28px 24px;
+      pointer-events: all;
+      position: relative;
+    }
+
+    /* ── Menu de velocidade ── */
+    .spd-menu {
+      position: absolute;
+      bottom: calc(100% + 10px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(14,14,14,.97);
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 10px;
+      padding: 6px 0;
+      min-width: 120px;
+      display: none;
+      z-index: 60;
+      box-shadow: 0 8px 28px rgba(0,0,0,.7);
+    }
+    .spd-menu.on { display: block; }
+    .spd-menu button {
+      display: block; width: 100%;
+      padding: 11px 24px;
+      background: none; border: none; color: #ccc;
+      text-align: center; cursor: pointer;
+      font-size: 14px; font-weight: 600;
+      transition: background .15s, color .15s;
+      letter-spacing: 0.3px;
+    }
+    .spd-menu button:hover { background: rgba(255,255,255,.08); color: #fff; }
+    .spd-menu button.spd-active { color: #E50914; font-weight: 800; }
+    .p-bar-track {
+      width: 100%;
+      height: 4px;
+      background: rgba(255,255,255,0.25);
+      border-radius: 2px;
+      overflow: hidden;
+      cursor: default;
+    }
+    .p-bar-fill {
+      height: 100%;
+      background: #E50914;
+      border-radius: 2px;
+      width: 0%;
+      transition: width 0.4s linear;
+    }
+    .p-time-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: rgba(255,255,255,0.55);
+      margin-top: 4px;
+    }
+    .p-controls-row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-top: 4px;
+    }
+    .p-ctrl-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity .2s;
+    }
+    .p-ctrl-btn:hover { opacity: 0.7; }
+    .p-ctrl-btn svg { width: 38px; height: 38px; fill: #fff; }
+    .p-spd-btn {
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 5px;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 5px 13px;
+      cursor: pointer;
+      letter-spacing: 0.5px;
+      transition: background .2s;
+    }
+    .p-spd-btn:hover { background: rgba(255,255,255,0.28); }
+    .spd-pills { display:flex; gap:4px; align-items:center; }
+    .spd-pill {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.28);
+      border-radius: 5px;
+      color: rgba(255,255,255,0.75);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      cursor: pointer;
+      transition: background .15s, color .15s;
+      letter-spacing: 0.2px;
+      white-space: nowrap;
+    }
+    .spd-pill:hover { background: rgba(255,255,255,0.22); color:#fff; }
+    .spd-pill.spd-active { background: #E50914; border-color: #E50914; color:#fff; }
+
+    /* ── Volume control ── */
+    .p-vol-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .p-vol-slider {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 80px;
+      height: 4px;
+      background: rgba(255,255,255,0.3);
+      border-radius: 2px;
+      outline: none;
+      cursor: pointer;
+    }
+    .p-vol-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 14px; height: 14px;
+      border-radius: 50%;
+      background: #fff;
+      cursor: pointer;
+    }
+    .p-vol-slider::-moz-range-thumb {
+      width: 14px; height: 14px;
+      border-radius: 50%;
+      background: #fff;
+      cursor: pointer;
+      border: none;
+    }
+    @media(max-width:600px) {
+      .p-vol-slider { width: 55px; }
+    }
+
+    /* ── Countdown ── */
+    #p-time-remaining {
+      font-size: 13px;
+      color: rgba(255,255,255,0.75);
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    /* ── Modal sair ── */
+    #modal-sair {
+      display: none; position: fixed; inset: 0; z-index: 3000;
+      background: rgba(0,0,0,.82); backdrop-filter: blur(6px);
+      align-items: center; justify-content: center;
+    }
+    #modal-sair.on { display: flex; }
+    .modal-sair-box {
+      background: #1c1c1c;
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 16px;
+      padding: 36px 28px;
+      width: 90%; max-width: 360px;
+      text-align: center;
+      animation: slideUp .3s cubic-bezier(.22,.61,.36,1);
+    }
+    .modal-sair-box .ms-emoji { font-size: 36px; margin-bottom: 12px; }
+    .modal-sair-box h3 { font-size: 19px; font-weight: 800; margin-bottom: 8px; }
+    .modal-sair-box p  { font-size: 13px; color: #aaa; line-height: 1.6; margin-bottom: 24px; }
+    .ms-btn-ficar {
+      width: 100%; padding: 15px;
+      background: #E50914; color: #fff;
+      border: none; border-radius: 8px;
+      font-size: 15px; font-weight: 800;
+      cursor: pointer; margin-bottom: 10px;
+      transition: filter .2s;
+    }
+    .ms-btn-ficar:hover { filter: brightness(1.12); }
+    .ms-btn-sair {
+      width: 100%; padding: 12px;
+      background: none; color: #777;
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 8px; font-size: 13px;
+      cursor: pointer; transition: color .2s;
+    }
+    .ms-btn-sair:hover { color: #ccc; }
+
+    @media(max-width:800px) {
+      .p-bottom { padding: 0 16px 18px; }
+      .p-ctrl-btn svg { width: 30px; height: 30px; }
+    }
+
+    /* ── Orientação mobile: player em landscape ── */
+    @media (max-width: 768px) and (orientation: portrait) {
+      #player-page:not(.pip-mode) {
+        width: 100vh;
+        height: 100vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
+        transform-origin: center center;
+      }
+    }
+    @media (min-width: 769px) {
+      #player-page:not(.pip-mode) {
+        transform: none;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    /* ═══════════════════ RESPONSIVE ═══════════════════ */
+    @media(max-width:800px){
+      .header { padding:14px 20px; }
+      .nav { display:none; }
+      .hero { height:100vh; }
+      .hero-bg::before {
+        background:linear-gradient(to bottom,rgba(0,0,0,.5) 0%,rgba(0,0,0,.05) 20%,rgba(0,0,0,0) 40%,rgba(0,0,0,.7) 68%,rgba(0,0,0,.98) 88%,rgba(0,0,0,1) 100%);
+      }
+      .hero-bg::after { display:none; }
+      .hero-content { padding:0 22px 40px; max-width:100%; }
+      .hero-title { font-size:clamp(44px,12vw,64px); letter-spacing:-1px; }
+      .hero-hook { font-size:14px; }
+      .btn-assistir { font-size:18px; padding:18px 32px; white-space:nowrap; letter-spacing:0; gap:10px; width:100%; justify-content:center; }
+      .btn-assistir svg { width:22px; height:22px; flex-shrink:0; }
+      .eps-section { padding:0 20px 60px; }
+      .ep-thumb { width:140px; min-width:140px; height:79px; }
+      .ep-n { font-size:20px; }
+      .p-top { padding:14px 18px; }
+    }
+  </style>
+  <!-- Bunny Stream — HLS.js para controle total do vídeo -->
+  <link rel="preconnect" href="https://vz-629303.b-cdn.net/">
+  <script src="../cdn.jsdelivr.net/npm/hls.js%401.5/dist/hls.min.js"></script>
+  <link rel="dns-prefetch" href="https://images.converteai.net/">
+  <link rel="dns-prefetch" href="https://api.vturb.com.br/">
+  <!-- Firebase tracking -->
+  <script src="../www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="../www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+
+<!-- ══════════════ HOME ══════════════ -->
+<div id="home-page">
+
+  <header class="header">
+    <div class="logo">MARATONA<b>+</b></div>
+    <nav>
+      <ul class="nav">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Séries</a></li>
+        <li><a href="#">Originais</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-bg"></div>
+
+    <div class="hero-content">
+
+      <div class="series-badge" style="font-size:9px;opacity:0.45;letter-spacing:1.5px;">série original &nbsp;·&nbsp; MARATONA+</div>
+
+      <h1 class="hero-title">O Peso<br>da Herança</h1>
+
+      <div class="hero-meta">
+        <span style="color:#f5c518;font-weight:700;">IMDb 8,7</span>
+        <span class="mdot"></span>
+        <span>2025</span>
+        <span class="mdot"></span>
+        <span>5 Episódios</span>
+        <span class="mdot"></span>
+        <span class="tag">Drama</span>
+        <span class="tag">Psicológico</span>
+      </div>
+
+      <p class="hero-hook"><strong style="color:#E50914;font-size:17px;font-style:normal;letter-spacing:0.2px;">A série que todo casal brasileiro deveria assistir</strong></p>
+
+      <p class="hero-desc">Você vai se reconhecer em cada cena. Cada briga, cada silêncio, cada distância — tudo faz sentido depois que você assiste. São 5 episódios que vão mudar a forma como você enxerga sua família para sempre.</p>
+
+      <!-- CTA button, text changes if progress saved -->
+      <div class="cta-wrap">
+        <button class="btn-assistir" id="btn-main" onclick="handleMainCTA()">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          ASSISTA GRÁTIS AGORA
+        </button>
+        <p class="cta-sub">
+          <strong>100% gratuito</strong> &nbsp;·&nbsp; Sem cadastro &nbsp;·&nbsp; Acesso imediato
+        </p>
+      </div>
+
+      <div class="icon-row">
+        <button class="ibtn" id="btn-curtir" onclick="toggleCurtir()">
+          <div class="ic" id="ic-curtir">🤍</div>
+          <span id="lbl-curtir">Curtir</span>
+        </button>
+        <button class="ibtn" onclick="compartilhar()">
+          <div class="ic">🔗</div>
+          <span>Compartilhar</span>
+        </button>
+        <button class="ibtn" onclick="abrirDepois()">
+          <div class="ic">🔔</div>
+          <span>Assistir Depois</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Abas -->
+  <div class="eps-section">
+    <div class="tabs">
+      <div class="tab active" onclick="switchTab(this,'tab-eps')">Episódios</div>
+      <div class="tab" onclick="switchTab(this,'tab-rel')">Relacionados</div>
+      <div class="tab" onclick="switchTab(this,'tab-det')">Detalhes</div>
+    </div>
+
+    <!-- ── Painel: Episódios ── -->
+    <div id="tab-eps" class="tab-panel">
+      <div class="season-label">Temporada 1</div>
+      <div class="ep-list" id="ep-list"></div>
+    </div>
+
+    <!-- ── Painel: Relacionados ── -->
+    <div id="tab-rel" class="tab-panel" style="display:none">
+      <div class="rel-grid">
+
+        <div class="rel-card" onclick="alert('Em breve disponível!')">
+          <div class="rel-thumb" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+            <div class="rel-overlay"><span class="rel-play">▶</span></div>
+            <div class="rel-match">97% pra você</div>
+          </div>
+          <div class="rel-info">
+            <div class="rel-title">Amor em Silêncio</div>
+            <div class="rel-meta"><span class="rel-badge">18+</span> 2024 · 4 ep · Drama</div>
+            <div class="rel-desc">Um casal que parou de falar descobre que o silêncio guardou mais do que imaginava.</div>
+          </div>
+        </div>
+
+        <div class="rel-card" onclick="alert('Em breve disponível!')">
+          <div class="rel-thumb" style="background:linear-gradient(135deg,#2d1b2e,#4a1942)">
+            <div class="rel-overlay"><span class="rel-play">▶</span></div>
+            <div class="rel-match">95% pra você</div>
+          </div>
+          <div class="rel-info">
+            <div class="rel-title">A Última Chance</div>
+            <div class="rel-meta"><span class="rel-badge">16+</span> 2024 · 3 ep · Drama</div>
+            <div class="rel-desc">Quando tudo parece perdido no casamento, uma viagem revela verdades que mudam tudo.</div>
+          </div>
+        </div>
+
+        <div class="rel-card" onclick="alert('Em breve disponível!')">
+          <div class="rel-thumb" style="background:linear-gradient(135deg,#0f2027,#203a43)">
+            <div class="rel-overlay"><span class="rel-play">▶</span></div>
+            <div class="rel-match">93% pra você</div>
+          </div>
+          <div class="rel-info">
+            <div class="rel-title">Raízes Partidas</div>
+            <div class="rel-meta"><span class="rel-badge">16+</span> 2023 · 5 ep · Drama Familiar</div>
+            <div class="rel-desc">Três gerações de uma família guardam um segredo que ameaça destruir tudo que construíram.</div>
+          </div>
+        </div>
+
+        <div class="rel-card" onclick="alert('Em breve disponível!')">
+          <div class="rel-thumb" style="background:linear-gradient(135deg,#1c1c1c,#3a1c1c)">
+            <div class="rel-overlay"><span class="rel-play">▶</span></div>
+            <div class="rel-match">91% pra você</div>
+          </div>
+          <div class="rel-info">
+            <div class="rel-title">O Preço do Orgulho</div>
+            <div class="rel-meta"><span class="rel-badge">14+</span> 2024 · 4 ep · Drama</div>
+            <div class="rel-desc">Ele nunca pediu desculpas. Ela nunca esqueceu. Uma história sobre o custo do silêncio.</div>
+          </div>
+        </div>
+
+        <div class="rel-card" onclick="alert('Em breve disponível!')">
+          <div class="rel-thumb" style="background:linear-gradient(135deg,#0d1b2a,#1b2838)">
+            <div class="rel-overlay"><span class="rel-play">▶</span></div>
+            <div class="rel-match">90% pra você</div>
+          </div>
+          <div class="rel-info">
+            <div class="rel-title">Recomeço</div>
+            <div class="rel-meta"><span class="rel-badge">14+</span> 2023 · 3 ep · Romance Drama</div>
+            <div class="rel-desc">Depois de 12 anos de casamento e dois filhos, eles precisam decidir: reconstruir ou partir.</div>
+          </div>
+        </div>
+
+        <div class="rel-card" onclick="alert('Em breve disponível!')">
+          <div class="rel-thumb" style="background:linear-gradient(135deg,#1a2a1a,#2d4a1e)">
+            <div class="rel-overlay"><span class="rel-play">▶</span></div>
+            <div class="rel-match">88% pra você</div>
+          </div>
+          <div class="rel-info">
+            <div class="rel-title">Entre Nós</div>
+            <div class="rel-meta"><span class="rel-badge">16+</span> 2024 · 6 ep · Drama</div>
+            <div class="rel-desc">O que acontece quando duas pessoas que se amam simplesmente não conseguem mais se comunicar?</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── Painel: Detalhes ── -->
+    <div id="tab-det" class="tab-panel" style="display:none">
+      <div class="det-wrap">
+
+        <div class="det-sobre">
+          <h3 class="det-h3">Sobre a série</h3>
+          <p class="det-p">
+            <em>O Peso da Herança</em> acompanha cinco momentos reais de um casal que carrega, sem perceber,
+            os padrões emocionais herdados de suas famílias de origem. Cada episódio revela uma cena do
+            cotidiano: o almoço de domingo, o aniversário esquecido, a briga no mercado, e mostra como
+            decisões tomadas em família se repetem de geração em geração.
+          </p>
+          <p class="det-p">
+            A série foi produzida para despertar casais que sentem que algo não vai bem, mas não conseguem
+            nomear o quê. Com linguagem cinematográfica e roteiro baseado em casos reais, cada episódio
+            termina com uma revelação que muda tudo.
+          </p>
+        </div>
+
+        <div class="det-grid">
+          <div class="det-item">
+            <span class="det-label">Elenco principal</span>
+            <span class="det-val">Ana Carvalho, Marcos Lima, Beatriz Torres, Roberto Fonseca</span>
+          </div>
+          <div class="det-item">
+            <span class="det-label">Gênero</span>
+            <span class="det-val">Drama · Familiar · Relacionamentos</span>
+          </div>
+          <div class="det-item">
+            <span class="det-label">Classificação</span>
+            <span class="det-val"><span class="det-badge">16+</span> Conteúdo adulto, temas de relacionamento</span>
+          </div>
+          <div class="det-item">
+            <span class="det-label">Ano</span>
+            <span class="det-val">2024</span>
+          </div>
+          <div class="det-item">
+            <span class="det-label">Episódios</span>
+            <span class="det-val">5 episódios · 8–14 min cada</span>
+          </div>
+          <div class="det-item">
+            <span class="det-label">Idioma</span>
+            <span class="det-val">Português Brasileiro</span>
+          </div>
+          <div class="det-item">
+            <span class="det-label">Legendas</span>
+            <span class="det-val">Português</span>
+          </div>
+          <div class="det-item">
+            <span class="det-label">Produção</span>
+            <span class="det-val">Blindagem Familiar Produções</span>
+          </div>
+        </div>
+
+        <div class="det-tags">
+          <span class="det-tag">Drama emocional</span>
+          <span class="det-tag">Relacionamentos</span>
+          <span class="det-tag">Família</span>
+          <span class="det-tag">Herança emocional</span>
+          <span class="det-tag">Comunicação</span>
+          <span class="det-tag">Casamento</span>
+          <span class="det-tag">Baseado em casos reais</span>
+          <span class="det-tag">Série nacional</span>
+        </div>
+
+        <div class="det-aviso">
+          <div class="det-aviso-icon">🛡️</div>
+          <div>
+            <strong>Aviso de conteúdo</strong><br>
+            <span>Esta série aborda temas de conflito conjugal, herança emocional e padrões familiares. Pode despertar reflexões intensas. Recomendada para maiores de 16 anos.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div><!-- /home-page -->
+
+
+<!-- ══════════════ PLAYER ══════════════ -->
+<div id="player-page">
+
+  <!-- Container do vídeo HLS -->
+  <div id="vturb-container"></div>
+
+  <!-- Fade preto -->
+  <div id="fade-black"></div>
+
+  <!-- Overlay de pausa motivacional — clique retoma o vídeo -->
+  <div id="pause-overlay" onclick="togglePlay(); mostrarUI();">
+    <div class="pause-msg">
+      <div class="pm-emoji">⏸️</div>
+      <div class="pm-txt" id="pm-txt">Faltam só poucos minutos para o desfecho!</div>
+      <div class="pm-sub">Continue assistindo, vale a pena até o fim.</div>
+    </div>
+  </div>
+
+  <!-- Card próximo episódio -->
+  <div id="next-card">
+    <div class="nc-label">▶ Próximo episódio</div>
+    <div class="nc-title" id="nc-title"></div>
+    <div class="nc-thumb"><img id="nc-img" src="#" alt=""></div>
+    <div class="nc-countdown-txt">Começando em <span id="nc-cdown">9</span>s</div>
+    <div class="nc-bar"><div class="nc-fill" id="nc-fill"></div></div>
+    <div class="nc-btns">
+      <button class="nc-btn-ok" onclick="event.stopPropagation(); fadeParaProximo()">▶ Assistir agora</button>
+      <button class="nc-btn-cancel" onclick="event.stopPropagation(); pararCdown(); nextCard.classList.remove('on')">Continuar depois</button>
+    </div>
+  </div>
+
+  <!-- Controles do player -->
+  <div class="p-shell" id="p-shell">
+    <div class="p-top">
+      <button class="btn-voltar" onclick="goHome()">
+        <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+        Voltar
+      </button>
+      <span class="p-ep-label" id="p-ep-label"></span>
+    </div>
+
+    <!-- Barra inferior: progresso + controles -->
+    <div class="p-bottom" id="p-bottom">
+      <div class="p-bar-track">
+        <div class="p-bar-fill" id="p-bar-fill"></div>
+      </div>
+      <div class="p-time-row">
+        <span id="p-time-remaining">Carregando...</span>
+      </div>
+      <div class="p-controls-row">
+        <button class="p-ctrl-btn" id="p-btn-play" onclick="togglePlay()">
+          <svg viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+        </button>
+        <!-- Volume -->
+        <div class="p-vol-wrap">
+          <button class="p-ctrl-btn" id="p-vol-btn" onclick="toggleMute()">
+            <svg viewBox="0 0 24 24" style="width:26px;height:26px"><path fill="#fff" d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+          </button>
+          <input type="range" id="p-vol-slider" class="p-vol-slider" min="0" max="1" step="0.05" value="1" oninput="setVolume(this.value)">
+        </div>
+        <div style="flex:1"></div>
+        <div class="spd-pills" id="spd-pills">
+          <button class="spd-pill spd-active" data-spd="1" onclick="setSpeed(1)">1×</button>
+          <button class="spd-pill" data-spd="1.5" onclick="setSpeed(1.5)">1.5×</button>
+        </div>
+        <!-- Fullscreen -->
+        <button class="p-ctrl-btn" id="p-fs-btn" onclick="toggleFullscreen()" style="margin-left:4px">
+          <svg id="p-fs-icon" viewBox="0 0 24 24" style="width:26px;height:26px"><path fill="#fff" d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /player-page -->
+
+<!-- Modal "Continuar de onde parou?" -->
+<div id="modal-continuar">
+  <div class="modal-continuar-box">
+    <h3>Continuar assistindo?</h3>
+    <p id="mc-desc">Você parou no Ep. 1. Quer continuar de onde parou?</p>
+    <button class="mc-btn-continuar" id="mc-btn-cont" onclick="continuarDeOndeParou()">Continuar Ep. 1</button>
+    <button class="mc-btn-inicio" onclick="assistirDoInicio()">Assistir desde o início</button>
+  </div>
+</div>
+
+<!-- ══════════════ VENDA PAGE (inline PiP) ══════════════ -->
+<div id="venda-page">
+  <div style="position:sticky;top:0;z-index:10;background:#fff;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid #22c55e;box-shadow:0 2px 12px rgba(0,0,0,.08);">
+    <div style="font-size:20px;font-weight:900;color:#166534;letter-spacing:-0.5px;">Blindagem<span style="color:#22c55e;">Familiar</span></div>
+    <button onclick="fecharPiP()" style="background:none;border:1px solid #ccc;border-radius:6px;color:#666;font-size:13px;cursor:pointer;padding:6px 14px;">← Voltar à série</button>
+  </div>
+
+  <div style="background:#f0fdf4;min-height:100vh;padding-bottom:60px;">
+    <div style="max-width:660px;margin:0 auto;padding:36px 20px 0;">
+
+      <div style="text-align:center;margin-bottom:32px;">
+        <div style="display:inline-block;background:#dcfce7;color:#166534;font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:6px 16px;border-radius:20px;margin-bottom:16px;">🎉 Você terminou a série! Parabéns!</div>
+        <h1 style="font-size:clamp(24px,5vw,40px);font-weight:900;line-height:1.15;color:#14532d;margin-bottom:16px;">Agora transforme o que você sentiu em <span style="color:#22c55e;">mudança real</span> no seu relacionamento.</h1>
+        <p style="font-size:16px;color:#374151;line-height:1.7;max-width:500px;margin:0 auto;">O método completo da série em um programa para você aplicar no dia a dia do seu casal.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:32px;border-radius:14px;overflow:hidden;">
+        <img src="blindagem%20gamilia%20(2).png" alt="Blindagem Familiar" style="width:100%;height:200px;object-fit:cover;">
+        <img src="blindagem%20gamilia%20(3).png" alt="Blindagem Familiar" style="width:100%;height:200px;object-fit:cover;">
+      </div>
+
+      <div style="background:#fff;border:2px solid #bbf7d0;border-radius:16px;padding:24px;margin-bottom:24px;">
+        <div style="font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#16a34a;margin-bottom:16px;">O que você leva hoje:</div>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <div style="display:flex;gap:12px;align-items:flex-start;"><span style="color:#22c55e;font-size:20px;line-height:1;flex-shrink:0;">✅</span><div style="color:#111;"><strong>Programa completo Blindagem Familiar</strong><br><span style="font-size:13px;color:#6b7280;">Acesso vitalício + todas as atualizações</span></div></div>
+          <div style="display:flex;gap:12px;align-items:flex-start;"><span style="color:#22c55e;font-size:20px;line-height:1;flex-shrink:0;">✅</span><div style="color:#111;"><strong>Guia: "7 Conversas que Todo Casal Precisa Ter"</strong><br><span style="font-size:13px;color:#6b7280;">PDF prático para aplicar hoje</span></div></div>
+          <div style="display:flex;gap:12px;align-items:flex-start;"><span style="color:#22c55e;font-size:20px;line-height:1;flex-shrink:0;">✅</span><div style="color:#111;"><strong>Workshop "Reconectando o Casal" (2h ao vivo)</strong><br><span style="font-size:13px;color:#6b7280;">Dinâmicas guiadas para os dois juntos</span></div></div>
+          <div style="display:flex;gap:12px;align-items:flex-start;"><span style="color:#22c55e;font-size:20px;line-height:1;flex-shrink:0;">✅</span><div style="color:#111;"><strong>Comunidade privada de casais</strong><br><span style="font-size:13px;color:#6b7280;">Apoio de pessoas que viveram o mesmo</span></div></div>
+          <div style="display:flex;gap:12px;align-items:flex-start;"><span style="color:#22c55e;font-size:20px;line-height:1;flex-shrink:0;">✅</span><div style="color:#111;"><strong>Suporte por WhatsApp por 30 dias</strong><br><span style="font-size:13px;color:#6b7280;">Acompanhamento direto com a equipe</span></div></div>
+        </div>
+      </div>
+
+      <div style="background:#fff;border:2px solid #22c55e;border-radius:16px;padding:28px;text-align:center;margin-bottom:24px;box-shadow:0 4px 24px rgba(34,197,94,.15);">
+        <div style="font-size:13px;color:#9ca3af;margin-bottom:4px;text-decoration:line-through;">De R$ 197,00</div>
+        <div style="font-size:52px;font-weight:900;color:#14532d;line-height:1;margin-bottom:6px;">R$ 67<span style="font-size:22px;">,00</span></div>
+        <div style="font-size:15px;color:#6b7280;margin-bottom:28px;">ou 12x de <strong style="color:#14532d;">R$ 6,90</strong> sem juros</div>
+        <button onclick="window.open('https://checkout.ticto.app/O63CA92A1','_blank')" style="width:100%;padding:20px;background:#22c55e;color:#fff;border:none;border-radius:12px;font-size:19px;font-weight:900;cursor:pointer;letter-spacing:0.3px;box-shadow:0 4px 20px rgba(34,197,94,.4);animation:pulso 2s ease-in-out infinite;">
+          QUERO O PROGRAMA COMPLETO →
+        </button>
+        <div style="margin-top:14px;font-size:12px;color:#9ca3af;">🔒 Pagamento 100% seguro via Ticto &nbsp;·&nbsp; ✅ Garantia de 7 dias</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:32px;">
+        <div style="background:#fff;border-radius:12px;padding:18px;border:1px solid #e5e7eb;">
+          <div style="display:flex;gap:2px;margin-bottom:8px;color:#f59e0b;font-size:16px;">★★★★★</div>
+          <p style="font-size:14px;color:#374151;line-height:1.65;margin-bottom:8px;">"Meu marido e eu quase nos separamos. Depois de assistir e aplicar o guia, tivemos a conversa que a gente evitou por 4 anos. Obrigada."</p>
+          <strong style="font-size:13px;color:#111;">Ana Beatriz M., São Paulo, SP</strong>
+        </div>
+        <div style="background:#fff;border-radius:12px;padding:18px;border:1px solid #e5e7eb;">
+          <div style="display:flex;gap:2px;margin-bottom:8px;color:#f59e0b;font-size:16px;">★★★★★</div>
+          <p style="font-size:14px;color:#374151;line-height:1.65;margin-bottom:8px;">"Assisti os 5 episódios numa tarde. Me vi em cada cena. O programa me ajudou a entender o que eu estava fazendo de errado."</p>
+          <strong style="font-size:13px;color:#111;">Carlos R., Belo Horizonte, MG</strong>
+        </div>
+        <div style="background:#fff;border-radius:12px;padding:18px;border:1px solid #e5e7eb;">
+          <div style="display:flex;gap:2px;margin-bottom:8px;color:#f59e0b;font-size:16px;">★★★★★</div>
+          <p style="font-size:14px;color:#374151;line-height:1.65;margin-bottom:8px;">"Comprei no impulso depois do último episódio. Não me arrependo. Já recomendei para 3 casais que conheço."</p>
+          <strong style="font-size:13px;color:#111;">Fernanda L., Curitiba, PR</strong>
+        </div>
+      </div>
+
+      <div style="text-align:center;background:#fff;border-radius:14px;padding:24px;margin-bottom:40px;border:2px solid #bbf7d0;">
+        <div style="font-size:36px;margin-bottom:8px;">🛡️</div>
+        <strong style="font-size:17px;color:#14532d;">Garantia incondicional de 7 dias</strong>
+        <p style="font-size:13px;color:#6b7280;margin-top:8px;line-height:1.6;">Se por qualquer motivo você não ficar satisfeito, devolvemos 100% do seu dinheiro. Sem burocracia.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ MODAL SAIR ══════════════ -->
+<div id="modal-sair">
+  <div class="modal-sair-box">
+    <div class="ms-emoji">⚠️</div>
+    <h3>Tem certeza que quer sair?</h3>
+    <p>Você está no meio do episódio.<br>Seu progresso ficará salvo quando voltar.</p>
+    <button class="ms-btn-ficar" onclick="fecharModalSair()">Continuar assistindo</button>
+    <button class="ms-btn-sair" onclick="confirmarSair()">Sair da série</button>
+  </div>
+</div>
+
+<!-- ══════════════ MODAL ASSISTIR DEPOIS ══════════════ -->
+<div id="modal-depois">
+  <div class="modal-box">
+    <h3>📲 Assistir Depois</h3>
+    <p>Coloque seu WhatsApp e vamos te lembrar quando você puder assistir. Sem spam, só um aviso.</p>
+    <input id="inp-tel" class="modal-input" type="tel" placeholder="Seu WhatsApp (ex: 11 99999-9999)">
+    <button class="modal-submit" onclick="enviarDepois()">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.858L.057 23.25l5.535-1.451A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.652-.51-5.17-1.399l-.371-.22-3.285.861.876-3.204-.241-.391A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      Me avise pelo WhatsApp
+    </button>
+    <button class="modal-cancel" onclick="fecharDepois()">Agora não</button>
+  </div>
+</div>
+
+<script>
+/* ════════════════════════════════════════════════
+   Bunny Stream — IDs dos vídeos
+════════════════════════════════════════════════ */
+const BUNNY_LIB = '629303';
+
+/* ══ ANALYTICS — Firebase tracking ══ */
+const _FIREBASE_CFG = {
+  apiKey:            "AIzaSyCGgyCAUfnltW4_bge4UVJO-rCi8lE-duc",
+  authDomain:        "maratona-plus.firebaseapp.com",
+  projectId:         "maratona-plus",
+  storageBucket:     "maratona-plus.firebasestorage.app",
+  messagingSenderId: "374602027302",
+  appId:             "1:374602027302:web:d27fb4b6bf0404f2cab1e7",
+  measurementId:     "G-LQ6K3X5D4G"
+};
+let _db = null;
+try {
+  if (!firebase.apps.length) firebase.initializeApp(_FIREBASE_CFG);
+  _db = firebase.firestore();
+} catch(e) {}
+
+function _sid() {
+  let id = localStorage.getItem('_msid');
+  if (!id) { id = Date.now().toString(36) + Math.random().toString(36).slice(2); localStorage.setItem('_msid', id); }
+  return id;
+}
+function _track(type, extra) {
+  if (!_db) return;
+  const today = new Date().toISOString().slice(0,10);
+  _db.collection('events').add({ type, sessionId: _sid(), date: today, ts: firebase.firestore.FieldValue.serverTimestamp(), ...extra }).catch(()=>{});
+}
+/* Track page view */
+_track('page_view');
+const BUNNY_IDS = [
+  'f07584e5-4b39-496f-a0f3-769ac44d9658',  // EP 1 — O Almoço
+  '443049fb-c96d-4e30-93a8-5b0f3266f4a3',  // EP 2 — O Aniversário
+  '4629774f-b889-401a-9ec8-952827050e05',  // EP 3 — O Mercado
+  '9d50b368-1cca-46be-8a78-423eb3cf1673',  // EP 4 — O Jantar
+  '7d779ff6-37de-47d6-ba3c-ab8966253dbc',  // EP 5 — A Sacola (pitch)
+];
+
+/* ════════════ DADOS DOS EPISÓDIOS ════════════ */
+const EPS = [
+  {
+    n:1, title:'O Almoço',
+    desc:'Uma pergunta muda tudo.',
+    thumb:'Gemini_Generated_Image_sg0r00sg0r00sg0r.png'
+  },
+  {
+    n:2, title:'O Aniversário',
+    desc:'A noite perfeita. Ele sabotou.',
+    thumb:'Gemini_Generated_Image_j3may2j3may2j3ma.png'
+  },
+  {
+    n:3, title:'O Mercado',
+    desc:'Um gesto. Uma memória apagada.',
+    thumb:'Gemini_Generated_Image_a2mr84a2mr84a2mr.png'
+  },
+  {
+    n:4, title:'O Jantar com as Amigas',
+    desc:'Ela sorriu. Por dentro, raiva.',
+    thumb:'Gemini_Generated_Image_rhhej4rhhej4rhhe.png'
+  },
+  {
+    n:5, title:'A Sacola',
+    desc:'Três etiquetas. Três vezes desistiu.',
+    thumb:'freepik__hyperrealistic-portrait-of-an-ordinary-38yearold-b__7576.png'
+  }
+];
+
+/* ════════════ RENDER LISTA DE EPISÓDIOS ════════════ */
+const epList = document.getElementById('ep-list');
+EPS.forEach((ep, i) => {
+  epList.innerHTML += `
+    <div class="ep-row" style="cursor:default">
+      <div class="ep-n">${ep.n}</div>
+      <div class="ep-thumb">
+        <img src="${ep.thumb}" alt="Ep ${ep.n}" loading="lazy">
+        <div class="ep-play-cover">
+          <div class="ep-play-icon">
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="ep-info">
+        <div class="ep-header">
+          <span class="ep-title">Ep. ${ep.n}: ${ep.title}</span>
+        </div>
+        <p class="ep-desc">${ep.desc}</p>
+      </div>
+    </div>`;
+});
+
+/* ════════════ PLAYER ════════════ */
+const nextCard       = document.getElementById('next-card');
+const fadeBlack      = document.getElementById('fade-black');
+const playerPg       = document.getElementById('player-page');
+const vturbContainer = document.getElementById('vturb-container');
+const pauseOverlay   = document.getElementById('pause-overlay');
+
+/* ══════════════════════════════════════════════════════════
+   PLAYER STATE
+══════════════════════════════════════════════════════════ */
+let curEp            = 0;
+let cancelado        = false;
+let cdownIv          = null;
+let uiTimer          = null;
+let vendaRedirecionado = false;
+
+/* ── Velocidade ── */
+const SPEEDS = [0.75, 1, 1.25, 1.5, 2];
+let speedIdx = 1;
+
+/* ── Timer próprio (independente da API do VTurb) ──
+   Funciona sempre: sincroniza com dados reais quando disponíveis */
+let _playing      = false;
+let _elapsed      = 0;    // segundos acumulados antes da sessão atual
+let _startedAt    = 0;    // Date.now() de quando deu play
+let _duration     = 0;    // duração total (recebe via postMessage / evento)
+let _saveTimer    = 0;    // controle de salvar a cada 10s
+let _curElId      = null; // id do elemento atual
+let _nextCardShown= false;// flag para não mostrar card duas vezes
+let _muted        = false;// estado mute
+let _volume       = 1;    // volume atual 0-1
+let _pendingSeek  = 0;    // posição a buscar ao carregar metadados
+
+function _getTime() {
+  if (!_playing) return _elapsed;
+  return _elapsed + (Date.now() - _startedAt) / 1000;
+}
+function _startTimer() {
+  if (_playing) return;
+  _playing    = true;
+  _startedAt  = Date.now();
+}
+function _pauseTimer() {
+  if (!_playing) return;
+  _elapsed = _getTime();
+  _playing = false;
+}
+function _resetTimer() {
+  _playing        = false;
+  _elapsed        = 0;
+  _startedAt      = 0;
+  _duration       = 0;
+  _saveTimer      = 0;
+  _nextCardShown  = false;
+}
+function _syncTime(t, dur) {
+  /* Recebe tempo real do VTurb — recalibra nosso timer */
+  if (dur > 0) _duration = dur;
+  if (t > 0) {
+    _elapsed   = t;
+    _startedAt = Date.now();
+  }
+}
+
+/* ── Loop do timer: atualiza UI a cada 300ms ── */
+let _timerLoop = null;
+function _startTimerLoop() {
+  clearInterval(_timerLoop);
+  _timerLoop = setInterval(() => {
+    if (!_playing) return;
+    const cur = _getTime();
+    const dur = _duration || 600; /* default 10min se VTurb não enviar duração */
+    _updateProgressUI(cur, dur);
+    /* Salva progresso a cada 10s */
+    if (cur - _saveTimer >= 10) {
+      _saveTimer = cur;
+      salvarProgresso(cur);
+    }
+    /* EP5 redirect aos 7:28 */
+    if (curEp === 4 && cur >= 448 && !vendaRedirecionado) {
+      vendaRedirecionado = true;
+      ativarPiP();
+    }
+    /* Mostra card "próximo episódio" 11s antes do fim (EP1-EP4 apenas) */
+    if (cur >= dur - 11 && dur > 15 && !_nextCardShown && curEp + 1 < EPS.length) {
+      _nextCardShown = true;
+      showNextCard();
+    }
+    /* Detecta fim via timer */
+    if (cur >= dur - 0.5 && dur > 10) {
+      _stopTimerLoop();
+      handleVideoEnd();
+    }
+  }, 300);
+}
+function _stopTimerLoop() { clearInterval(_timerLoop); }
+
+/* ══════════════════════════════════════════════════════════
+   CONTROLES — Play/Pause, Velocidade
+══════════════════════════════════════════════════════════ */
+
+function _video() { return document.getElementById('bunny-video'); }
+
+function _vturbSetSpeed(rate) {
+  const v = _video(); if (v) v.playbackRate = rate;
+}
+
+function togglePlay() {
+  const v = _video(); if (!v) return;
+  if (v.paused) { v.play(); } else { v.pause(); }
+}
+
+function setSpeed(s) {
+  document.querySelectorAll('.spd-pill').forEach(b => {
+    b.classList.toggle('spd-active', parseFloat(b.dataset.spd) === s);
+  });
+  _vturbSetSpeed(s);
+}
+
+/* ── Volume ── */
+function setVolume(val) {
+  _volume = parseFloat(val);
+  _muted  = _volume === 0;
+  const v = _video();
+  if (v) { v.volume = _volume; v.muted = _muted; }
+  _updateVolBtn();
+}
+function toggleMute() {
+  const v = _video(); if (!v) return;
+  v.muted = !v.muted;
+  _muted  = v.muted;
+  const vol = _muted ? 0 : (_volume > 0 ? _volume : 1);
+  const slider = document.getElementById('p-vol-slider');
+  if (slider) slider.value = vol;
+  _updateVolBtn();
+}
+function _updateVolBtn() {
+  const btn = document.getElementById('p-vol-btn');
+  if (!btn) return;
+  if (_muted || _volume === 0) {
+    btn.innerHTML = '<svg viewBox="0 0 24 24" style="width:26px;height:26px"><path fill="#fff" d="M16.5 12A4.5 4.5 0 0 0 14 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>';
+  } else {
+    btn.innerHTML = '<svg viewBox="0 0 24 24" style="width:26px;height:26px"><path fill="#fff" d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>';
+  }
+}
+
+/* ── Fullscreen ── */
+function toggleFullscreen() {
+  const el  = document.getElementById('player-page');
+  const isFs = !!(document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement);
+  if (!isFs) {
+    const req = el.requestFullscreen || el.webkitRequestFullscreen || el.mozRequestFullScreen;
+    if (req) req.call(el).catch(() => {});
+  } else {
+    const exit = document.exitFullscreen || document.webkitExitFullscreen || document.mozCancelFullScreen;
+    if (exit) exit.call(document).catch(() => {});
+  }
+}
+/* Atualiza ícone do botão fullscreen */
+document.addEventListener('fullscreenchange', _updateFsIcon);
+document.addEventListener('webkitfullscreenchange', _updateFsIcon);
+function _updateFsIcon() {
+  const icon = document.getElementById('p-fs-icon');
+  if (!icon) return;
+  const isFs = !!(document.fullscreenElement || document.webkitFullscreenElement);
+  icon.innerHTML = isFs
+    ? '<path fill="#fff" d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/>'
+    : '<path fill="#fff" d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>';
+}
+
+/* ── Modal de saída ── */
+function goHome() {
+  salvarProgresso(_getTime());
+  const msgEl = document.querySelector('#modal-sair .modal-sair-box p');
+  if (msgEl) msgEl.textContent = _getSairMsg();
+  document.getElementById('modal-sair').classList.add('on');
+}
+function fecharModalSair() {
+  document.getElementById('modal-sair').classList.remove('on');
+  const v = _video();
+  if (v && v.paused) { v.play(); }
+}
+function confirmarSair() {
+  document.getElementById('modal-sair').classList.remove('on');
+  _goHomeReal();
+}
+function _goHomeReal() {
+  _pauseTimer();
+  _stopTimerLoop();
+  _curElId = null;
+  pararCdown();
+  /* Para e destroi HLS */
+  const v = _video();
+  if (v) { v.pause(); v.src = ''; }
+  if (window._hlsInstance) { window._hlsInstance.destroy(); window._hlsInstance = null; }
+  nextCard.classList.remove('on');
+  fadeBlack.classList.remove('on');
+  pauseOverlay.classList.remove('on');
+  vturbContainer.innerHTML = '';
+  playerPg.style.display = 'none';
+  document.getElementById('home-page').style.display = 'block';
+  window.scrollTo(0, 0);
+  _atualizarBotaoCTA();
+  if (screen.orientation && screen.orientation.unlock) screen.orientation.unlock();
+  const exit = document.exitFullscreen || document.webkitExitFullscreen;
+  if ((document.fullscreenElement || document.webkitFullscreenElement) && exit)
+    exit.call(document).catch(() => {});
+}
+
+/* ══════════════════════════════════════════════════════════
+   UI DO PLAYER
+══════════════════════════════════════════════════════════ */
+function _updatePlayBtn(paused) {
+  const btn = document.getElementById('p-btn-play');
+  if (!btn) return;
+  btn.innerHTML = paused
+    ? '<svg viewBox="0 0 24 24"><path fill="#fff" d="M8 5v14l11-7z"/></svg>'
+    : '<svg viewBox="0 0 24 24"><path fill="#fff" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
+}
+
+const EP_PAUSE_MSGS = [
+  'Falta só um minutinho para acabar o ep. 1, vai valer a pena!',
+  'Quase lá! O ep. 2 está no momento mais intenso.',
+  'Não sai agora, o desfecho do ep. 3 muda tudo!',
+  'O ep. 4 está no auge, falta pouquinho!',
+  'Episódio final! Você está quase no fim da jornada.',
+];
+const EP_SAIR_MSGS = [
+  'Você está no meio do ep. 1, falta tão pouco para o desfecho!',
+  'O ep. 2 está no melhor momento, pena sair agora.',
+  'O ep. 3 vai te surpreender, não para por aqui.',
+  'Quase no fim do ep. 4, o que vem depois vale muito.',
+  'É o episódio final! Falta só um pouquinho para acabar.',
+];
+function _showPauseMsg() {
+  const el = document.getElementById('pm-txt');
+  if (!el) return;
+  const dur = _duration || 600;
+  const rem = Math.max(0, dur - _getTime());
+  const mins = Math.ceil(rem / 60);
+  const base = EP_PAUSE_MSGS[curEp] || EP_PAUSE_MSGS[0];
+  el.textContent = mins <= 2
+    ? `Faltam só ${mins} minutinho${mins !== 1 ? 's' : ''} para acabar! Não sai agora.`
+    : base;
+}
+function _getSairMsg() {
+  const dur = _duration || 600;
+  const rem = Math.max(0, dur - _getTime());
+  const mins = Math.ceil(rem / 60);
+  if (mins <= 2) return `Faltam só ${mins} minutinho${mins !== 1 ? 's' : ''} para acabar o episódio!`;
+  return EP_SAIR_MSGS[curEp] || EP_SAIR_MSGS[0];
+}
+
+function _calcFakeProgress(cur, dur) {
+  if (!dur) return 0;
+  const r = Math.min(cur / dur, 1);
+  if (r <= 0.6) return Math.min(r * 1.6, 0.95);
+  return 0.95 + ((r - 0.6) / 0.4) * 0.05;
+}
+function _fmtTime(s) {
+  if (!s || isNaN(s) || s < 0) return '0:00';
+  return Math.floor(s / 60) + ':' + String(Math.floor(s % 60)).padStart(2, '0');
+}
+function _updateProgressUI(cur, dur) {
+  const fill = document.getElementById('p-bar-fill');
+  const tr   = document.getElementById('p-time-remaining');
+  if (fill) fill.style.width = (_calcFakeProgress(cur, dur) * 100).toFixed(1) + '%';
+  if (tr) {
+    const rem = Math.max(0, (dur || 600) - cur);
+    tr.textContent = 'Faltam ' + _fmtTime(rem);
+  }
+}
+
+/* ══════════════════════════════════════════════════════════
+   localStorage — salva ep + tempo dentro do episódio
+══════════════════════════════════════════════════════════ */
+const PROGRESS_KEY = 'maratona_progress';
+
+function salvarProgresso(t) {
+  localStorage.setItem(PROGRESS_KEY, JSON.stringify({ ep: curEp, t: Math.floor(t || _getTime() || 0) }));
+}
+function carregarProgresso() {
+  try { return JSON.parse(localStorage.getItem(PROGRESS_KEY)); } catch(e) { return null; }
+}
+
+/* ── Atualiza botão CTA com progresso salvo ── */
+function _atualizarBotaoCTA() {
+  const prog = carregarProgresso();
+  if (prog && prog.ep >= 0 && prog.ep < EPS.length) {
+    const ep  = EPS[prog.ep];
+    const btn = document.getElementById('btn-main');
+    if (btn) btn.innerHTML = `<svg viewBox="0 0 24 24" style="width:22px;height:22px;fill:#fff;flex-shrink:0"><path d="M8 5v14l11-7z"/></svg> Continuar Ep. ${ep.n}`;
+  }
+}
+_atualizarBotaoCTA();
+
+/* ── Modal "Continuar de onde parou?" ── */
+function handleMainCTA() {
+  const prog = carregarProgresso();
+  if (prog && prog.ep >= 0 && prog.ep < EPS.length) {
+    const ep = EPS[prog.ep];
+    document.getElementById('mc-desc').textContent =
+      `Você parou no Ep. ${ep.n}: "${ep.title}". Quer continuar?`;
+    document.getElementById('mc-btn-cont').textContent = `Continuar Ep. ${ep.n}`;
+    document.getElementById('modal-continuar').classList.add('on');
+  } else {
+    playEpisode(0);
+  }
+}
+function continuarDeOndeParou() {
+  document.getElementById('modal-continuar').classList.remove('on');
+  const prog = carregarProgresso();
+  playEpisode(prog ? prog.ep : 0);
+  _pendingSeek = (prog && prog.t > 5) ? prog.t : 0;
+}
+function assistirDoInicio() {
+  document.getElementById('modal-continuar').classList.remove('on');
+  localStorage.removeItem(PROGRESS_KEY);
+  playEpisode(0);
+}
+
+/* ══════════════════════════════════════════════════════════
+   MOSTRAR / OCULTAR UI DO PLAYER
+══════════════════════════════════════════════════════════ */
+function mostrarUI() {
+  playerPg.classList.add('show-ui');
+  clearTimeout(uiTimer);
+  uiTimer = setTimeout(() => playerPg.classList.remove('show-ui'), 4000);
+}
+playerPg.addEventListener('mousemove', mostrarUI);
+playerPg.addEventListener('touchstart', mostrarUI, { passive: true });
+
+/* Clique na área de vídeo → pausa/resume */
+playerPg.addEventListener('click', function(e) {
+  if (e.target.closest('.p-shell'))       return;
+  if (e.target.closest('#next-card'))     return;
+  if (e.target.closest('#pause-overlay')) return;
+  if (e.target.closest('#modal-sair'))    return;
+  togglePlay();
+  mostrarUI();
+});
+
+/* ══════════════════════════════════════════════════════════
+   TOCAR EPISÓDIO
+══════════════════════════════════════════════════════════ */
+function playEpisode(idx) {
+  curEp  = idx;
+  _track('ep_start', { ep: idx + 1 });
+  if (typeof fbq !== 'undefined') fbq('track', 'ViewContent', { content_name: 'EP' + (idx + 1), content_category: 'Serie' });
+  cancelado = false;
+  vendaRedirecionado = false;
+
+  /* Reset controles */
+  speedIdx = 1;
+  _curElId = null;
+  _stopTimerLoop();
+  _resetTimer();
+  _pendingSeek = 0;
+  _duration = 600; /* duração padrão 10min — atualiza quando VTurb enviar */
+  _updatePlayBtn(false);
+  _updateProgressUI(0, 600);
+  const spdBtn = document.getElementById('p-spd-btn');
+  if (spdBtn) spdBtn.textContent = '1×';
+  pauseOverlay.classList.remove('on');
+
+  pararCdown();
+
+  const ep  = EPS[idx];
+  const vid = BUNNY_IDS[idx];
+  _curElId  = 'bunny-video';
+
+  /* Destroi instância HLS anterior */
+  if (window._hlsInstance) { window._hlsInstance.destroy(); window._hlsInstance = null; }
+
+  /* Cria elemento <video> com controle total */
+  vturbContainer.innerHTML =
+    `<video id="bunny-video"
+       style="position:absolute;inset:0;width:100%;height:100%;background:#000;"
+       playsinline preload="auto">
+     </video>`;
+
+  const video  = document.getElementById('bunny-video');
+  const hlsUrl = `https://vz-e26ea0ef-472.b-cdn.net/${vid}/playlist.m3u8`;
+
+  /* Carrega via HLS.js (todos os navegadores) ou HLS nativo (Safari) */
+  if (window.Hls && Hls.isSupported()) {
+    const hls = new Hls({ enableWorker: true, startLevel: -1 });
+    window._hlsInstance = hls;
+    hls.loadSource(hlsUrl);
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED, () => { video.play().catch(() => {}); });
+    hls.on(Hls.Events.ERROR, (e, d) => { if (d.fatal) console.warn('HLS erro:', d.type, d.details); });
+  } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    /* Safari suporta HLS nativamente */
+    video.src = hlsUrl;
+    video.play().catch(() => {});
+  }
+
+  /* ── Eventos do <video> — controle 100% real ── */
+  video.addEventListener('play', () => {
+    _startTimer(); _startTimerLoop(); _updatePlayBtn(false);
+    pauseOverlay.classList.remove('on');
+  });
+  video.addEventListener('pause', () => {
+    _pauseTimer(); _updatePlayBtn(true); _showPauseMsg();
+    pauseOverlay.classList.add('on');
+  });
+  video.addEventListener('loadedmetadata', () => {
+    if (video.duration > 0) { _duration = video.duration; }
+    if (_pendingSeek > 0 && _pendingSeek < video.duration - 3) {
+      video.currentTime = _pendingSeek;
+      _pendingSeek = 0;
+    }
+  });
+  video.addEventListener('timeupdate', () => {
+    if (video.duration > 0) { _syncTime(video.currentTime, video.duration); }
+    /* Track 50% and 90% progress (once per episode) */
+    if (!video._tracked50 && video.duration > 0 && video.currentTime / video.duration >= 0.5) {
+      video._tracked50 = true;
+      _track('ep_progress', { ep: curEp + 1, pct: 50 });
+    }
+    if (!video._tracked90 && video.duration > 0 && video.currentTime / video.duration >= 0.9) {
+      video._tracked90 = true;
+      _track('ep_complete', { ep: curEp + 1, pct: 90 });
+    }
+    /* EP5 — aos 7:28 minimiza player e abre página de vendas */
+    if (curEp === 4 && video.currentTime >= 448 && !vendaRedirecionado) {
+      vendaRedirecionado = true;
+      ativarPiP();
+    }
+  });
+  video.addEventListener('ended', handleVideoEnd);
+
+  /* UI */
+  document.getElementById('p-ep-label').textContent = `Ep. ${ep.n}: ${ep.title}`;
+  if (idx + 1 < EPS.length) {
+    const prox = EPS[idx + 1];
+    document.getElementById('nc-title').textContent = `Ep. ${prox.n}: ${prox.title}`;
+    document.getElementById('nc-img').src = prox.thumb;
+  }
+  nextCard.classList.remove('on');
+  fadeBlack.classList.remove('on');
+
+  document.getElementById('home-page').style.display = 'none';
+  playerPg.style.display = 'block';
+  mostrarUI();
+  salvarProgresso(0);
+
+  setTimeout(() => window.scrollTo(0, 1), 400);
+}
+
+/* Funções de controle removidas (eram para iframe — agora usamos <video> direto) */
+
+/* ══════════════════════════════════════════════════════════
+   VOLTAR HOME / PiP / PRÓXIMO EPISÓDIO
+══════════════════════════════════════════════════════════ */
+
+const VENDA_URL = 'https://checkout.ticto.app/O63CA92A1';
+
+function ativarPiP() {
+  if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+  if (document.webkitFullscreenElement) document.webkitExitFullscreen();
+
+  _track('pip_triggered', { ep: 5, seconds: 448 });
+  _track('sales_page');
+  if (typeof fbq !== 'undefined') fbq('track', 'Lead',            { content_name: 'PiP_EP5_728' });
+  if (typeof fbq !== 'undefined') fbq('track', 'InitiateCheckout',{ content_name: 'VendaPage'   });
+
+  const v = _video();
+  if (!v) return;
+
+  /* ── 1. Cria o mini player fixo no canto ── */
+  let mini = document.getElementById('_mini-player');
+  if (!mini) {
+    mini = document.createElement('div');
+    mini.id = '_mini-player';
+    document.body.appendChild(mini);
+  }
+
+  /* ── 2. Move o <video> para o mini player (continua tocando) ── */
+  mini.appendChild(v);
+  mini.classList.add('show');   /* dispara animação slide-up */
+
+  /* ── 3. Fade-out + esconde o player-page (vídeo saiu dele) ── */
+  const pp = document.getElementById('player-page');
+  pp.style.transition = 'opacity 0.35s ease';
+  pp.style.opacity = '0';
+  setTimeout(() => {
+    pp.style.visibility  = 'hidden';
+    pp.style.pointerEvents = 'none';
+    pp.style.opacity     = '';
+    pp.style.transition  = '';
+  }, 350);
+
+  /* ── 4. Mostra iframe com a página de vendas por baixo ── */
+  let ov = document.getElementById('_pip-venda-overlay');
+  if (!ov) {
+    ov = document.createElement('div');
+    ov.id = '_pip-venda-overlay';
+    ov.style.cssText = 'position:fixed;inset:0;z-index:998;background:#000;';
+    ov.innerHTML = '<iframe src="' + VENDA_URL +
+      '" style="width:100%;height:100%;border:none;" allow="payment *"></iframe>';
+    document.body.appendChild(ov);
+  } else {
+    ov.style.display = 'block';
+  }
+
+  /* ── 5. Botão ✕ para voltar à série ── */
+  let cb = document.getElementById('_mini-pip-close');
+  if (!cb) {
+    cb = document.createElement('button');
+    cb.id = '_mini-pip-close';
+    cb.title = 'Voltar à série';
+    cb.innerHTML = '✕';
+    cb.addEventListener('click', fecharPiP);
+    document.body.appendChild(cb);
+  }
+  cb.style.display = 'block';
+}
+
+function fecharPiP() {
+  /* ── Move o <video> de volta para o vturb-container ── */
+  const mini = document.getElementById('_mini-player');
+  const v    = mini ? mini.querySelector('video') : _video();
+  const cont = document.getElementById('vturb-container');
+  if (v && cont) {
+    v.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;background:#000;';
+    cont.appendChild(v);
+  }
+
+  /* ── Esconde mini player ── */
+  if (mini) { mini.classList.remove('show'); mini.style.display = 'none'; }
+
+  /* ── Esconde botão ✕ ── */
+  const cb = document.getElementById('_mini-pip-close');
+  if (cb) cb.style.display = 'none';
+
+  /* ── Restaura player-page ── */
+  const pp = document.getElementById('player-page');
+  pp.style.visibility   = '';
+  pp.style.pointerEvents = '';
+  pp.style.opacity      = '';
+  pp.classList.remove('pip-mini');
+
+  /* ── Fecha iframe overlay ── */
+  const ov = document.getElementById('_pip-venda-overlay');
+  if (ov) ov.style.display = 'none';
+
+  /* ── Fecha overlay interno legado ── */
+  document.getElementById('venda-page').classList.remove('on');
+
+  /* ── Retoma o vídeo ── */
+  if (v && v.paused) v.play().catch(() => {});
+}
+
+function handleVideoEnd() {
+  _pauseTimer(); _stopTimerLoop();
+  if (curEp + 1 < EPS.length) {
+    localStorage.setItem(PROGRESS_KEY, JSON.stringify({ ep: curEp + 1, t: 0 }));
+    if (!_nextCardShown) showNextCard();
+  } else {
+    salvarProgresso();
+    _goHomeReal();
+  }
+}
+
+/* ══════════════════════════════════════════════════════════
+   PRÓXIMO EPISÓDIO — card com countdown
+══════════════════════════════════════════════════════════ */
+function showNextCard() {
+  if (curEp + 1 >= EPS.length) return; /* EP5 nunca mostra */
+  nextCard.classList.add('on');
+  iniciarCdown(9); /* 9s countdown → avança automaticamente */
+}
+function iniciarCdown(duracao) {
+  pararCdown();
+  let passado = 0;
+  const fill  = document.getElementById('nc-fill');
+  const cdownEl = document.getElementById('nc-cdown');
+  fill.style.width = '0%';
+  if (cdownEl) cdownEl.textContent = Math.ceil(duracao);
+  cdownIv = setInterval(() => {
+    passado += 0.5;
+    fill.style.width = Math.min(100, (passado / duracao) * 100) + '%';
+    if (cdownEl) cdownEl.textContent = Math.max(0, Math.ceil(duracao - passado));
+    if (passado >= duracao && !cancelado) { pararCdown(); fadeParaProximo(); }
+  }, 500);
+}
+function pararCdown() { if (cdownIv) { clearInterval(cdownIv); cdownIv = null; } }
+function playProximo() { fadeParaProximo(); }
+function cancelarProximo() { cancelado = true; nextCard.classList.remove('on'); pararCdown(); }
+let _fadingToNext = false;
+function fadeParaProximo() {
+  if (_fadingToNext) return;       /* trava: impede dupla chamada */
+  _fadingToNext = true;
+  pararCdown();
+  nextCard.classList.remove('on');
+  fadeBlack.classList.add('on');
+  setTimeout(() => {
+    const prox = curEp + 1;
+    if (prox < EPS.length) {
+      playEpisode(prox);
+      setTimeout(() => { fadeBlack.classList.remove('on'); _fadingToNext = false; }, 500);
+    } else {
+      _fadingToNext = false;
+      goHome();
+    }
+  }, 1800);
+}
+
+/* ══════════════════════════════════════════════════════════
+   TECLADO
+══════════════════════════════════════════════════════════ */
+document.addEventListener('keydown', e => {
+  if (playerPg.style.display === 'none') return;
+  mostrarUI();
+  switch (e.code) {
+    case 'Space': e.preventDefault(); togglePlay(); break;
+    case 'KeyF': toggleFullscreen(); break;
+    case 'Escape':
+      if (!document.fullscreenElement && !document.webkitFullscreenElement) goHome();
+      break;
+  }
+});
+
+/* ═══════ UI GERAL ═══════ */
+function switchTab(el, panelId) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  document.querySelectorAll('.tab-panel').forEach(p => p.style.display = 'none');
+  const panel = document.getElementById(panelId);
+  if (panel) panel.style.display = 'block';
+}
+
+function toggleLista(btn) {
+  const ic  = document.getElementById('ic-lista');
+  const lbl = document.getElementById('lbl-lista');
+  if (ic.textContent === '+') { ic.textContent='✓'; lbl.textContent='Na lista'; }
+  else                        { ic.textContent='+'; lbl.textContent='Lista';    }
+}
+
+/* Curtir with localStorage persist */
+(function initCurtir() {
+  const curtido = localStorage.getItem('maratona_curtido') === '1';
+  const ic  = document.getElementById('ic-curtir');
+  const lbl = document.getElementById('lbl-curtir');
+  if (curtido) {
+    ic.textContent  = '❤️';
+    lbl.textContent = '1.2k curtidas';
+  }
+})();
+
+function toggleCurtir() {
+  const ic  = document.getElementById('ic-curtir');
+  const lbl = document.getElementById('lbl-curtir');
+  const curtido = localStorage.getItem('maratona_curtido') === '1';
+  if (curtido) {
+    localStorage.removeItem('maratona_curtido');
+    ic.textContent  = '🤍';
+    lbl.textContent = 'Curtir';
+  } else {
+    localStorage.setItem('maratona_curtido', '1');
+    ic.textContent  = '❤️';
+    lbl.textContent = '1.2k curtidas';
+  }
+}
+
+/* Compartilhar with Web Share API fallback */
+function compartilhar() {
+  const url   = window.location.href;
+  const title = 'O Peso da Herança | MARATONA+';
+  const text  = 'Assisti essa série e fiquei sem palavras. Você precisa ver isso.';
+  if (navigator.share) {
+    navigator.share({ title, text, url }).catch(() => {});
+  } else {
+    navigator.clipboard.writeText(url).then(() => {
+      alert('Link copiado!');
+    }).catch(() => {
+      alert('Link copiado!');
+    });
+  }
+}
+
+/* ═══════ MODAL ASSISTIR DEPOIS ═══════ */
+function abrirDepois() {
+  document.getElementById('modal-depois').classList.add('on');
+}
+function fecharDepois() {
+  document.getElementById('modal-depois').classList.remove('on');
+}
+function enviarDepois() {
+  const tel = document.getElementById('inp-tel').value.trim();
+  if (!tel) { document.getElementById('inp-tel').focus(); return; }
+  document.querySelector('.modal-box h3').textContent = 'Pronto!';
+  document.querySelector('.modal-box p').textContent  = 'Vamos te lembrar assim que estiver disponível!';
+  document.querySelector('.modal-submit').style.display  = 'none';
+  document.getElementById('inp-tel').style.display       = 'none';
+  setTimeout(fecharDepois, 2500);
+}
+</script>
+
+
+</body>
+
+<!-- Mirrored from www.maratonaplus.com.br/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Apr 2026 23:32:45 GMT -->
+</html>
